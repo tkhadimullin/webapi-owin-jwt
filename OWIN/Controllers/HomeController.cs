@@ -10,5 +10,11 @@ namespace OWIN.WebApi.Controllers
 
             return View();
         }
+
+        [Authorize]
+        public ActionResult Protected()
+        {
+            return View();
+        }
     }
 }

@@ -24,7 +24,7 @@ namespace OWIN.WebApi
                     ValidateIssuerSigningKey = true,
                     ValidIssuer = "http://localhost",
                     ValidAudience = "http://localhost",
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("my_secret_key_12345"))
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("jwt_signing_secret_key"))
                 }
             });
             appBuilder.UseWebApi(config);
